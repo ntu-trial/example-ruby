@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - "2.5.1"
-script:bundle exec rake bootstrap
+script: bundle exec rake bootstrap
 
 after_success:
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
