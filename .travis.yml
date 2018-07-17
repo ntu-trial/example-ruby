@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - "2.5.1"
   
-gemfile: gemfiles
+gemfile: Gemfiles
 
 after_success:
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
