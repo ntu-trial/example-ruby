@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - "2.5.1"
-bundle install --jobs=3 --retry=3 --deployment
+script: bundle install --jobs=3 --retry=3 --deployment
 
 
 
