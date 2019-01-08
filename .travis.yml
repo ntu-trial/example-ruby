@@ -1,7 +1,8 @@
 language: ruby
 rvm:
   - "2.5.1"
-script: bundle install --jobs=3 --retry=3 --deployment
+
+install: gem install rails
 
 after_success:
   - bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar.sh)
